@@ -15,7 +15,7 @@ This project is part of the **Data Intelligence** university course. The goal is
 
 ---
 
-## 🔄 Data Intelligence Pipeline
+## Data Intelligence Pipeline
 1. **Data Ingestion**: Load CSV data (`student-mat.csv` or `student-por.csv`).  
 2. **Preprocessing**: Encode categorical features, scale numerical ones, and create dropout label.  
 3. **Feature Engineering**: Exclude `G3` to avoid leakage; retain `G1`, `G2`, and other features.  
