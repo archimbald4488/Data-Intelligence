@@ -1,6 +1,6 @@
 # Student Performance Prediction
 
-This project is part of the **Data Intelligence** course deliverables. The goal is to **predict student dropout risk** using the [UCI Student Performance Dataset](https://archive.ics.uci.edu/dataset/320/student+performance).
+This project is part of the **Data Intelligence** university course. The goal is to **predict student dropout risk** using the [UCI Student Performance Dataset](https://archive.ics.uci.edu/dataset/320/student+performance).
 
 ---
 
