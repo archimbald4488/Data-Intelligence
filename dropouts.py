@@ -8,9 +8,7 @@ from sklearn.metrics import accuracy_score, classification_report, confusion_mat
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# ==============================
 # Data Preprocessing
-# ==============================
 def load_data(path):
     """Load CSV dataset into pandas DataFrame."""
     return pd.read_csv(path, sep=';')
@@ -37,9 +35,7 @@ def preprocess_data(df, target="dropout"):
     X_scaled = scaler.fit_transform(X)
     return X_scaled, y, scaler, X.columns
 
-# ==============================
 # Model Training
-# ==============================
 def train_models(X_train, y_train):
     """Train multiple models and return them."""
     models = {
@@ -54,9 +50,7 @@ def train_models(X_train, y_train):
         trained_models[name] = model
     return trained_models
 
-# ==============================
 # Evaluation
-# ==============================
 def evaluate_models(models, X_test, y_test):
     """Evaluate trained models and print performance metrics."""
     results = {}
@@ -74,9 +68,7 @@ def evaluate_models(models, X_test, y_test):
         print("Confusion Matrix:\n", confusion_matrix(y_test, y_pred))
     return results
 
-# ==============================
 # Visualization
-# ==============================
 def plot_feature_importance(model, feature_names):
     if hasattr(model, 'feature_importances_'):
         importances = model.feature_importances_
@@ -86,9 +78,7 @@ def plot_feature_importance(model, feature_names):
         plt.title("Feature Importance")
         plt.show()
 
-# ==============================
 # Main Pipeline
-# ==============================
 def main():
     # Load data (example: Math dataset)
     df = load_data("student-mat.csv")
@@ -115,4 +105,5 @@ def main():
     plot_feature_importance(models["Random Forest"], feature_names)
 
 if __name__ == "__main__":
+
     main()
