@@ -39,6 +39,6 @@ https://archive.ics.uci.edu/dataset/320/student+performance (file needed is name
 ## Installation
 Clone the repository and install dependencies:
 ```bash
-git clone https://github.com/<your-username>/student-performance-prediction.git
-cd student-performance-prediction
+git clone https://github.com/archimbald448/Data-Intelligence.git
+cd Data-Intelligence
 pip install -r requirements.txt
